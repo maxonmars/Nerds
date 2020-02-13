@@ -1,0 +1,414 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #283136;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font: inherit;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    
+    background-color: #FB565A;
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #E74246;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #D7373B;
+}
+
+/* Стилизация header =========================
+===================== */
+
+.main-navigation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+.navigation-list a {
+    color: #000000;
+}
+
+.main-basket a {
+    color: #000000;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus,
+.main-basket a:hover,
+.main-basket a:focus {
+    color: #FB565A;
+}
+
+.navigation-list a:active,
+.main-basket a:active {
+    color: rgba(000, 000, 000, 0.3);
+}
+
+.navigation-current a {
+    padding-bottom: 9px;
+
+    border-bottom: 2px solid #fb565a;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    opacity: 0.8;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
+/* Стилизация main index ====================
+======================== */
+.slider {
+    background-color: #eeeeee;
+}
+
+.slider-slogan {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+/* Section = services ==========================
+======================*/
+
+.services-list {
+    list-style: none;
+}
+
+.services-list h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+/* .services-button-red {
+
+} */
+
+.services-button-green {
+    background-color: #00ca74;
+}
+
+.services-button-green:hover,
+.services-button-green:focus {
+    background-color: #00bc6c;
+}
+
+.services-button-green:active {
+    background-color: #00aa62;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.services-button-yellow {
+    background-color: #efc84a;
+}
+
+.services-button-yellow:hover,
+.services-button-yellow:focus {
+    background-color: #eab534;
+}
+
+.services-button-yellow:active {
+    background-color: #e5a722;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Section = about_us ===============================
+====================== */
+
+.about_us p:first-of-type {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.about_us p:nth-of-type(3) {
+    font-weight: 700;
+    color: #000000;
+}
+
+.about_us-services-list {
+    list-style: none;
+}
+
+.about_us p:last-of-type {
+    font-weight: 700;
+    color: #000000;
+}
+
+.about_us-item {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 10.06px;
+    color: #000000;
+}
+
+.about_us-list dd {
+    line-height: 18px;
+}
+
+/* Section = partners =====================================
+====================== */
+
+.partners-item {
+    list-style: none;
+}
+
+.partners-item img {
+    opacity: 0.2;
+}
+
+.partners-item img:hover,
+.partners-item img:focus {
+    opacity: 1;
+}
+
+.partners-item img:active {
+    opacity: 0.1;
+}
+
+/* main catalog ============================================
+================ */
+
+.catalog-heading {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+/* form filter =============================================
+=============== */
+
+.filter fieldset {
+        border: 0;
+    }
+
+.filter-price legend,
+.filter-grid legend,
+.filter-features legend {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-price label,
+.filter-price input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+    text-transform: uppercase;
+}
+
+.filter-price input {
+    background-color: #eeeeee;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Прячем элемент управления */
+/* Для Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+/* Для Firefox */
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
+.filter-grid label,
+.filter-features label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+}
+
+.filter-grid li,
+.filter-features li {
+    list-style: none;
+}
+
+.filter .filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+/* mocap catalog ===========================================
+================= catalog sort */
+
+.catalog-sort span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.catalog-sort ul {
+    list-style: none;
+}
+
+.catalog-sort-item a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(000, 000, 000, 0.3);
+    text-transform: uppercase;
+}
+
+.catalog-sort-item-current a {
+    color: #000000;
+}
+
+/* catalog list ============================================
+================ */
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item-hover {
+    background-color: #eeeeee;
+}
+
+.catalog-item-hover h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.catalog-item-hover p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+
+/* pagination catalog ======================================
+====================== */
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #eeeeee;
+}
+
+.pagination-item-current a {
+    background-color: #ffffff;
+    border: 3px solid #eeeeee;
+}
+
+/* footer ==================================================
+========== */
+
+.map-feedback b {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+
+}
+
+.map-feedback p {
+    line-height: 18px;
+    color: #666666;
+}
+
+.social {
+    list-style: none;
+}
+
+.call_to_action {
+    line-height: 22px;
+}
+
+.call_to_action b {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+}
+
+/* section = modal ==========================================
+=================== */
+
+.modal > p {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.feedback-form p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5);
+}
