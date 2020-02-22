@@ -14,148 +14,158 @@
 </head>
 
 <body>
-    <header class="main-heder">
-        <nav class="main-navigation">
-            <a class="main-header-logo">
-                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии Nerds">
-            </a>
-            <ul class="navigation-list">
-                <li>
-                    <a href="#">Студия</a>
-                </li>
-                <li>
-                    <a href="#">Клиенты</a>
-                </li>
-                <li>
-                    <a href="catalog.html">Магазин</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-            <span class="main-basket">
-                <a href="">Корзина</a>
-            </span>
-
-        </nav>
-
-    </header>
-    <main class="container">
-        <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-        <section class="slider">
-            <div class="slider-main">
-                <ul>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-navigation">
+                <a class="main-header-logo">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии Nerds">
+                </a>
+                <ul class="navigation-list">
                     <li>
-                        <input class="visually-hidden slider-input slider-input-radio" type="radio" id="slider-1"
-                            name="respond" checked>
-                        <label for="slider-1"></label>
+                        <a href="#">Студия</a>
                     </li>
                     <li>
-                        <input class="visually-hidden slider-input slider-input-radio" type="radio" id="slider-2"
-                            name="respond">
-                        <label for="slider-2"></label>
+                        <a href="#">Клиенты</a>
                     </li>
                     <li>
-                        <input class="visually-hidden slider-input slider-input-radio" type="radio" id="slider-3"
-                            name="respond">
-                        <label for="slider-3"></label>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
                     </li>
                 </ul>
-            </div>
-            <div>
-                <h2 class="slider-slogan">Долго, дорого, скурпулезно</h2>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-                <a class="button feedback-button" href="">Узнать больше</a>
-                <img src="img/slide1.png" width="698" height="413" alt="Изображение смартфонов">
-            </div>
-            <div>
-                <h2 class="slider-slogan">Любим математику как никто другой</h2>
-                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <a class="button feedback-button" href="">Узнать больше</a>
-                <img src="img/slide2.png" width="663" height="430" alt="Изображение мониторов">
-            </div>
-            <div>
-                <h2 class="slider-slogan">Только ночь, только хардкор</h2>
-                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <a class="button feedback-button" href="">Узнать больше</a>
-                <img src="img/slide3.png" width="759" height="411" alt="Изображение планшета и смартфона">
+                <span class="main-basket">
+                    <a href="">Корзина</a>
+                </span>
+    
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
+        <section class="slider">
+            <div class="container">
+                <div class="slider-main">
+                    <ul>
+                        <li>
+                            <input class="visually-hidden slider-input slider-input-radio" type="radio" id="slider-1"
+                                name="respond" checked>
+                            <label for="slider-1"></label>
+                        </li>
+                        <li>
+                            <input class="visually-hidden slider-input slider-input-radio" type="radio" id="slider-2"
+                                name="respond">
+                            <label for="slider-2"></label>
+                        </li>
+                        <li>
+                            <input class="visually-hidden slider-input slider-input-radio" type="radio" id="slider-3"
+                                name="respond">
+                            <label for="slider-3"></label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="slider-slogan">Долго, дорого, скурпулезно</h2>
+                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+                    <a class="button feedback-button" href="">Узнать больше</a>
+                    <img src="img/slide1.png" width="698" height="413" alt="Изображение смартфонов">
+                </div>
+                <div>
+                    <h2 class="slider-slogan">Любим математику как никто другой</h2>
+                    <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                    <a class="button feedback-button" href="">Узнать больше</a>
+                    <img src="img/slide2.png" width="663" height="430" alt="Изображение мониторов">
+                </div>
+                <div>
+                    <h2 class="slider-slogan">Только ночь, только хардкор</h2>
+                    <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                    <a class="button feedback-button" href="">Узнать больше</a>
+                    <img src="img/slide3.png" width="759" height="411" alt="Изображение планшета и смартфона">
+                </div>
             </div>
         </section>
 
         <!-- здесь будет слайдер  -->
-        <section class="services">
-            <h2 class="visually-hidden">Предоставляемые услуги</h2>
-            <ul class="services-list">
-                <li class="services-item">
-                    <h3>Веб-сайты</h3>
-                    <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <img src="img/illustration-1.png" width="300" height="146" alt="">
-                    <button class="button services-button services-button-red" type="button">Заказать</button>
-                </li>
-                <li class="services-item">
-                    <h3>Приложения</h3>
-                    <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <img src="img/illustration-2.png" width="300" height="146" alt="">
-                    <button class="button services-button services-button-green" type="button">Заказать</button>
-                </li>
-                <li class="services-item">
-                    <h3>Презентации</h3>
-                    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <img src="img/illustration-3.png" width="300" height="146" alt="">
-                    <button class="button services-button services-button-yellow" type="button">Заказать</button>
-                </li>
-            </ul>
-        </section>
-        <section class="about_us">
-            <h2 class="visually-hidden">Информация о нас</h2>
-            <p>Мы — маленькая, но гордая<br>
-                дизайн-студия из Краснодара. </p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-                превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p>Выполняем заказы на разработку:</p>
-            <ul class="about_us-services-list">
-                <li class="about_us-services-item">Веб-сайтов любой сложности</li>
-                <li class="about_us-services-item">Мобильных приложений для iOS и Android</li>
-                <li class="about_us-services-item">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-            <img class="about_us_logo" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании">
-            <p>с 2004 года Любим точность во всем:</p>
-            <dl class="about_us-list">
-                <dt class="about_us-item">146<sup>%</sup></dt>
-                <dd>Уровень самоотдачи</dd>
-
-                <dt class="about_us-item">100<sup>%</sup></dt>
-                <dd>Соблюдение сроков</dd>
-
-                <dt class="about_us-item">50<sup>%</sup></dt>
-                <dd>Минимальная предоплата</dd>
-            </dl>
-        </section>
-        <section class="partners">
-            <h2 class="visually-hidden">Наши партнеры</h2>
-            <ul class="partners-list">
-                <li class="partners-item">
-                    <a href="#">
-                        <img src="img/logo-1.png" width="199" height="68" alt="Интерактивные онлайн-курсы htmlacademy">
-                    </a>
-                </li>
-                <li class="partners-item">
-                    <a href="#">
-                        <img src="img/logo-2.png" width="209" height="90" alt="Барбершоп Borodinski">
-                    </a>
-                </li>
-                <li class="partners-item">
-                    <a href="#">
-                        <img src="img/logo-3.png" width="185" height="52" alt="Pink">
-                    </a>
-                </li>
-                <li class="partners-item">
-                    <a href="#">
-                        <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
-                    </a>
-                </li>
-            </ul>
-        </section>
+        <div class="container">
+            <section class="services">
+                <h2 class="visually-hidden">Предоставляемые услуги</h2>
+                <ul class="services-list">
+                    <li class="services-item">
+                        <h3>Веб-сайты</h3>
+                        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                        <img src="img/illustration-1.png" width="300" height="146" alt="">
+                        <button class="button services-button services-button-red" type="button">Заказать</button>
+                    </li>
+                    <li class="services-item">
+                        <h3>Приложения</h3>
+                        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                        <img src="img/illustration-2.png" width="300" height="146" alt="">
+                        <button class="button services-button services-button-green" type="button">Заказать</button>
+                    </li>
+                    <li class="services-item">
+                        <h3>Презентации</h3>
+                        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                        <img src="img/illustration-3.png" width="300" height="146" alt="">
+                        <button class="button services-button services-button-yellow" type="button">Заказать</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="about_us">
+                <div class="about-left-wrapper">
+                    <h2 class="visually-hidden">Информация о нас</h2>
+                    <p>Мы — маленькая, но гордая<br>
+                        дизайн-студия из Краснодара. </p>
+                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+                        превыше креатива. Работаем не покладая рук, как роботы.</p>
+                    <p>Выполняем заказы на разработку:</p>
+                    <ul class="about_us-services-list">
+                        <li class="about_us-services-item">Веб-сайтов любой сложности</li>
+                        <li class="about_us-services-item">Мобильных приложений для iOS и Android</li>
+                        <li class="about_us-services-item">Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </div>
+                <div class="about-right-wrapper">
+                    <img class="about_us_logo" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании">
+                    <p>с 2004 года Любим точность во всем:</p>
+                    <dl class="about_us-list">
+                        <dt class="about_us-item">146<sup>%</sup></dt>
+                        <dd>Уровень самоотдачи</dd>
+        
+                        <dt class="about_us-item">100<sup>%</sup></dt>
+                        <dd>Соблюдение сроков</dd>
+        
+                        <dt class="about_us-item">50<sup>%</sup></dt>
+                        <dd>Минимальная предоплата</dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="partners">
+                <h2 class="visually-hidden">Наши партнеры</h2>
+                <ul class="partners-list">
+                    <li class="partners-item">
+                        <a href="#">
+                            <img src="img/logo-1.png" width="199" height="68" alt="Интерактивные онлайн-курсы htmlacademy">
+                        </a>
+                    </li>
+                    <li class="partners-item">
+                        <a href="#">
+                            <img src="img/logo-2.png" width="209" height="90" alt="Барбершоп Borodinski">
+                        </a>
+                    </li>
+                    <li class="partners-item">
+                        <a href="#">
+                            <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+                        </a>
+                    </li>
+                    <li class="partners-item">
+                        <a href="#">
+                            <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
         <img src="img/map group.jpg" width="1440" height="416"
@@ -163,23 +173,27 @@
         <!-- <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A87a75cb30f34949c2490de44389de57343ad0a810ef9255ff4e78256d3013e46&amp;source=constructor"
             width="100%" height="370" frameborder="0"></iframe> -->
-        <div class="map-feedback">
-            <h2 class="visually-hidden">Контактная информация</h2>
-            <b>Nёrds design studio</b>
-            <p>191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <a class="button feedback-button" href="#">Напишите нам</a>
+        <div class="container">
+            <div class="map-feedback">
+                <h2 class="visually-hidden">Контактная информация</h2>
+                <b>Nёrds design studio</b>
+                <p>191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7 (812) 275-75-75</p>
+                <a class="button feedback-button" href="#">Напишите нам</a>
+            </div>
+            <div class="social-wrapper">
+                <ul class="social">
+                    <li><a class="social-button" href=""></a>vkontakte</li>
+                    <li><a class="social-button" href=""></a>facebook</li>
+                    <li><a class="social-button" href=""></a>instagram</li>
+                </ul>
+                <p class="call_to_action">
+                    <b>Давайте дружить, это выгодно!</b><br>
+                    Скидка 10% для друзей из социальных сетей.
+                </p>
+            </div>
         </div>
-        <ul class="social">
-            <li><a class="social-button" href=""></a>vkontakte</li>
-            <li><a class="social-button" href=""></a>facebook</li>
-            <li><a class="social-button" href=""></a>instagram</li>
-        </ul>
-        <p class="call_to_action">
-            <b>Давайте дружить, это выгодно!</b><br>
-            Скидка 10% для друзей из социальных сетей.
-        </p>
 
 
     </footer>
