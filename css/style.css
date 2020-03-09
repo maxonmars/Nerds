@@ -48,6 +48,7 @@ input[type="radio"].visually-hidden {
     background-color: #FB565A;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .button:hover,
@@ -591,10 +592,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-heading {
     padding: 0;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 75px;
+    padding-bottom: 110px;
     margin: 0;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
 
     font-weight: 500;
     font-size: 55px;
@@ -615,10 +616,102 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset {
+        margin: 0;
+        padding: 0;
         border: 0;
-    }
+}
 
-.filter-price legend,
+.filter-price legend {
+    margin-bottom: 49px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-control {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 260px;
+    height: 80px;
+    margin-bottom: 14px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    border-radius: 3px;
+    background-color: #eeeeee;
+}
+
+.scale {
+    height: 2px;
+    margin-top: 39px;
+
+    background-color: #dfe2e3;
+}
+
+.scale-bar {
+    width: 70%;
+    height: 2px;
+
+    background-color: #4fd69d;
+}
+
+.toggle {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 4px;
+    height: 4px;
+
+    background-color: #b5b5b5;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px #bdbdbd;
+    cursor: pointer;
+}
+
+.max-toggle {
+    left: 70%;
+    margin-left: -20px;
+}
+
+.price-control {
+    margin-bottom: 53px;
+}
+
+.price-control input {
+    padding: 8px 15px;
+    margin-right: 30px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+    text-transform: uppercase;
+
+    background-color: #eeeeee;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.price-control input:last-child {
+    margin-right: 0;
+}
+
+.price-control label {
+    margin-right: 8px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+    text-transform: uppercase;
+}
+
 .filter-grid legend,
 .filter-features legend {
     font-weight: 700;
@@ -628,23 +721,8 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.filter-price label,
-.filter-price input {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #283136;
-    text-transform: uppercase;
-}
 
-.filter-price input {
-    background-color: #eeeeee;
-    border: 0;
-    text-align: center;
-    vertical-align: middle;
-}
-
-/* Прячем элемент управления */
+/* Прячем элемент управления price-control */
 /* Для Chrome */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -658,26 +736,173 @@ input[type=number]{
   -moz-appearance: textfield;
 }
 
-.filter-grid label,
-.filter-features label {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #283136;
-}
-
 .filter-grid li,
 .filter-features li {
     list-style: none;
 }
 
 .filter .filter-button {
+    padding-left: 89px;
+    padding-right: 89px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     color: #000000;
 
     background-color: #eeeeee;
+}
+
+.filter-button:hover {
+    background-color: #dfdfdf;
+ }
+
+ .filter-button:active {
+    background-color: #d5d5d5;
+    color: #aaaaaa;
+    box-shadow: inset 0 3px #bfbfbf;
+ }
+
+.filter-grid legend {
+    margin-bottom: 15px;
+}
+
+.filter-grid ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 44px;
+}
+
+.filter-option {
+    margin-bottom: 15px;
+    padding-left: 36px;
+}
+
+.filter-option label {
+    position: relative;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+
+    cursor: pointer;
+}
+
+.filter-option label::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 2px;
+    width: 9px;
+    height: 9px;
+
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #a6a6a6;
+    cursor: pointer;
+
+}
+
+.filter-option input:checked+label::before {
+    background-color: #a6a6a6;
+}
+
+/* disabled */
+.filter-option input:disabled:checked+label::before {
+    background-color: #e9e9e9;
+
+    cursor: auto;
+}
+
+.filter-option input:disabled+label::before {
+    box-shadow: 0 0 0 4px #e9e9e9;
+
+    cursor: auto;
+}
+
+.filter-option input:disabled+label {
+    color: #e9e9e9;
+
+    cursor: auto;
+}
+
+/* hover */
+.filter-option input:not([disabled]):checked+label:hover::before {
+    background-color: #4d4d4d;
+}
+
+.filter-option label:hover::before {
+    box-shadow: 0 0 0 4px #4d4d4d;
+}
+
+.filter-features legend {
+    margin-bottom: 14px;
+}
+
+.filter-features ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 48px;
+}
+
+.features-checkbox {
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 37px;
+}
+
+.features-checkbox label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+}
+
+.features-checkbox label::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 0px;
+    width: 19px;
+    height: 19px;
+
+    border: 2px solid #a6a6a6;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.features-checkbox input:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 6px;
+    width: 16px;
+    height: 8px;
+    
+    border-bottom: 4px solid #a6a6a6;
+    border-left: 4px solid #a6a6a6;
+    border-radius: 1px;
+    transform: rotate(-45deg);
+    box-shadow: 
+    0 2px #ffffff,
+    inset 0 -2px #ffffff;
+    cursor: pointer;
+}
+
+.features-checkbox label:hover::before,
+.features-checkbox input:hover+label::after {
+    border-color: #505050;
+}
+
+.features-checkbox input:disabled+label::before,
+.features-checkbox input:disabled+label::after,
+.features-checkbox input:disabled+label {
+    border-color: #ededed;
+    color: #ededed;
+
+    cursor: auto;
 }
 
 /* mocap catalog ===========================================

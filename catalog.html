@@ -52,19 +52,26 @@
                     <form class="filter" method="get" action="http://echo.htmlacademy.ru">
                         <fieldset class="filter-price">
                             <legend>Стоимость:</legend>
-                            <input id="slider-left" type='number' , value='0' , min='0' , max='20000'>
-                            <label for="slider-left">От</label>
-                            <input id="slider-right" type='number' , value='15000' , min='0' , max='20000'>
-                            <label for="slider-right">До</label>
-                            <input value='0' , min='0' , max='20000' , step='500' , type='range'>
-                            <input value='15000' , min='0' , max='20000' , step='500' , type='range'>
+                            <div class="filter-control">
+                                <div class="scale">
+                                    <div class="scale-bar"></div>
+                                </div>
+                                <div class="toggle min-toggle"></div>
+                                <div class="toggle max-toggle"></div>
+                            </div>
+                            <div class="price-control">
+                                <label class="min-price" for="slider-left">От</label>
+                                <input class="min-price" id="slider-left" type='number' , value='0' , min='0' , max='20000'>
+                                <label class="max-price" for="slider-right">До</label>
+                                <input class="max-price" id="slider-right" type='number' , value='15000' , min='0' , max='20000'>
+                            </div>
                         </fieldset>
                         <fieldset class="filter-grid">
                             <legend>Сетка:</legend>
                             <ul>
                                 <li class="filter-option">
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                        id="filter-adaptive" name="grid-type" value="adaptive" checked>
+                                        id="filter-adaptive" name="grid-type" value="adaptive" disabled checked>
                                     <label for="filter-adaptive">Адаптивная</label>
                                 </li>
                                 <li class="filter-option">
@@ -82,27 +89,27 @@
                         <fieldset class="filter-features">
                             <legend>Особенности:</legend>
                             <ul>
-                                <li>
+                                <li class="features-checkbox">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                        id="filter-slider" name="slider" checked>
+                                        id="filter-slider" name="slider" disabled checked>
                                     <label for="filter-slider">Слайдер</label>
                                 </li>
-                                <li>
+                                <li class="features-checkbox">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                         id="filter-advantage" name="advantage">
                                     <label for="filter-advantage">Блок преимуществ</label>
                                 </li>
-                                <li>
+                                <li class="features-checkbox">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                         id="filter-news" name="news" checked>
                                     <label for="filter-news">Новости</label>
                                 </li>
-                                <li>
+                                <li class="features-checkbox">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                         id="filter-gallery" name="gallery">
                                     <label for="filter-gallery">Галерея</label>
                                 </li>
-                                <li>
+                                <li class="features-checkbox">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
                                         id="filter-basket" name="basket">
                                     <label for="filter-basket">Корзина</label>
@@ -213,23 +220,29 @@
         </div>
     </main>
     <footer>
-        <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A87a75cb30f34949c2490de44389de57343ad0a810ef9255ff4e78256d3013e46&amp;source=constructor"
-            width="100%" height="370" frameborder="0"></iframe>
-        <div class="container">
-            <div class="map-feedback">
-                <h2 class="visually-hidden">Контактная информация</h2>
-                <b>Nёrds design studio</b>
-                <p>191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p>
-                <a class="button feedback-button" href="#">Напишите нам</a>
+        <div class="map">
+            <!-- <img src="img/map group.jpg" width="1440" height="416"
+                alt="Наша компания расположенна по адресу г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8."> -->
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A87a75cb30f34949c2490de44389de57343ad0a810ef9255ff4e78256d3013e46&amp;source=constructor"
+                width="100%" height="416" frameborder="0"></iframe>
+            <div class="container">
+                <div class="map-feedback">
+                    <h2 class="visually-hidden">Контактная информация</h2>
+                    <b class="feedback-title">Nёrds design studio</b>
+                    <p class="feedback-adds">191186, Санкт-Петербург,<br>
+                        ул. Б. Конюшенная, д. 19/8</p>
+                    <p class="feedback-phone">тел. +7 (812) 275-75-75</p>
+                    <a class="button feedback-button" href="#">Напишите нам</a>
+                </div>
             </div>
+        </div>
+        <div class="container">
             <div class="social-wrapper">
                 <ul class="social">
-                    <li><a class="social-button" href=""></a>vkontakte</li>
-                    <li><a class="social-button" href=""></a>facebook</li>
-                    <li><a class="social-button" href=""></a>instagram</li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">vkontakte</span></a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">facebook</span></a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">instagram</span></a></li>
                 </ul>
                 <p class="call_to_action">
                     <b>Давайте дружить, это выгодно!</b><br>
@@ -237,8 +250,6 @@
                 </p>
             </div>
         </div>
-
-
     </footer>
     <section class="modal modal-feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
