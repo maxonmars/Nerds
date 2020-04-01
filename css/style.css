@@ -137,7 +137,7 @@ input[type="radio"].visually-hidden {
     width: 15px;
     height: 15px;
 
-    background-image: url("/img/cart-icon1.svg");
+    background-image: url("img/cart-icon1.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -208,19 +208,19 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item:nth-child(1) {
-    background-image: url("/img/slide1.png");
+    background-image: url("img/slide1.png");
     background-repeat: no-repeat;
     background-position: 93% 100%;
 }
 
 .slider-item:nth-child(2) {
-    background-image: url("/img/slide2.png");
+    background-image: url("img/slide2.png");
     background-repeat: no-repeat;
     background-position: 100% 0%;
 }
 
 .slider-item:nth-child(3) {
-    background-image: url("/img/slide3.png");
+    background-image: url("img/slide3.png");
     background-repeat: no-repeat;
     background-position: 100% 100%;
 }
@@ -1282,7 +1282,7 @@ input[type=number]{
     height: 15px;
     margin: auto;
 
-    background-image: url("/img/vk-icon.svg");
+    background-image: url("img/vk-icon.svg");
 }
 
 .social li:nth-child(2) a::before {
@@ -1291,7 +1291,7 @@ input[type=number]{
     height: 22px;
     margin: auto;
 
-    background-image: url("/img/fb-icon.svg");
+    background-image: url("img/fb-icon.svg");
 }
 
 .social li:last-child a::before {
@@ -1300,7 +1300,7 @@ input[type=number]{
     height: 21px;
     margin: auto;
 
-    background-image: url("/img/insta-icon.svg");
+    background-image: url("img/insta-icon.svg");
 }
 
 .call_to_action {
