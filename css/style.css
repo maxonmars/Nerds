@@ -1282,7 +1282,7 @@ input[type=number]{
     height: 15px;
     margin: auto;
 
-    background-image: url(/img/vk-icon.svg);
+    background-image: url(img/vk-icon.svg);
 }
 
 .social li:nth-child(2) a::before {
@@ -1291,7 +1291,7 @@ input[type=number]{
     height: 22px;
     margin: auto;
 
-    background-image: url(/img/fb-icon.svg);
+    background-image: url("/img/fb-icon.svg");
 }
 
 .social li:last-child a::before {
@@ -1300,7 +1300,7 @@ input[type=number]{
     height: 21px;
     margin: auto;
 
-    background-image: url(/img/insta-icon.svg);
+    background-image: url("img/insta-icon.svg");
 }
 
 .call_to_action {
